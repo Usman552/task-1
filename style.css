@@ -83,7 +83,7 @@ body {
 .hero-buttons button {
     background-color: #C9AE6A;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 28px;
     border: none;
     font-size: 14px;
     cursor: pointer;
@@ -132,6 +132,7 @@ body {
     background-color: #C9AE6A;
     width: 187px;
     height: 316px;
+    padding: 20px;
 }
 
 .card-4 {
@@ -191,7 +192,7 @@ body {
 
 
 .section-2 {
-    margin-top: 130px;
+    margin-top: 180px;
 }
 
 .section-2 h2 {
@@ -295,6 +296,10 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
+.icon-1{
+    height:114px;
+    width: 114px;
+}
 
 @media screen and (max-width: 768px) {
     .icon-row img {
@@ -331,7 +336,7 @@ body {
 .sec4-c2 {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/53DU0335.png');
     max-height: 677px;
-    padding: 100px 20px 10px 80px !important;
+    padding: 100px 0px 10px 80px !important;
     background-size: cover;
     background-position: center;
     text-align: left;
@@ -341,13 +346,13 @@ body {
 .sec4-c2 h2 {
     font-size: 48px;
     margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .sec4-c2 p {
     font-size: 20px;
     padding-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .tick-list {
@@ -356,7 +361,7 @@ body {
     margin: 0;
     color: white;
     /* For white text */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 18px;
     margin-bottom: 40px;
 }
@@ -458,6 +463,7 @@ body {
 .contact-form {
     width: 90%;
     color: white;
+    padding: 20px;
     margin: 50px auto;
 }
 
@@ -469,12 +475,14 @@ body {
 form input,
 form textarea {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #fff;
     background-color: transparent;
-    color: white;
-    font-size: 1rem;
+    color:rgb(253, 250, 240);
+    font-size:16px;
+    line-height: 29px;
+    font-family:Helvetica, sans-serif;
 }
 
 .custom-select {
@@ -555,6 +563,11 @@ form textarea {
     height: 32px;
 }
 
+.icon-text{
+    font-size: 14px;
+    line-height: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 h2 {
     color: #333;
@@ -569,8 +582,9 @@ h2 {
 
 .newsletter-container p {
     font-size: 24px;
-    font-weight: 400;
-    padding-bottom: 10px;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .subscription-form {
