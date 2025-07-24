@@ -196,53 +196,71 @@ body {
 }
 
 .section-2 h2 {
-    font-size: 42px;
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size:32px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    font-family:Helvetica, sans-serif;
 }
 
 .section-2 p {
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    line-height: 36px;
+    font-family:Helvetica, sans-serif;
 }
 
-.section-2-c1 {
-    background-image: url('images/53DU0302.png');
-    height: 110vh;
-    background-size: cover;
-    background-position: center;
+.section-2-row {
+    height: 100vh;
 }
 
+.section-2-c1,
 .section-2-c2 {
-    background-color: #ffffff !important;
-    background-size: cover;
-    /* text-align: left; */
-    gap: 10px;
+    height: 100%;
+}
+
+.section-2-c1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Keep background color and padding */
+.section-2-c2 {
+    background-color: #ffffff;
     padding: 70px !important;
 }
 
-.section-2-c2 h2 {
-    font-size: 32px;
-    margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+/* Responsive Fixes */
+@media screen and (max-width: 768px) {
+    .section-2-row {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .section-2-c1,
+    .section-2-c2 {
+        height: auto;
+    }
+
+    .section-2-c2 {
+        padding: 30px;
+    }
+
+    .section-2-c2 h2 {
+        font-size: 24px;
+    }
+
+    .section-2-c2 p {
+        font-size: 16px;
+    }
+
+    .section-2-c2 button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
 }
 
-.section-2-c2 p {
-    font-size: 20px;
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.section-2-c2 button {
-    background-color: #C9AE6A;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 20px;
-}
 
 @media screen and (max-width: 768px) {
     .section-2-c2 {
