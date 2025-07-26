@@ -51,10 +51,10 @@ body {
     font-size: 13px;
     text-decoration: none;
     border-radius: 0px !important;
-    border: none !important;      
-    outline: none !important;      
-    display: inline-block;         
-    margin: 0;                
+    border: none !important;
+    outline: none !important;
+    display: inline-block;
+    margin: 0;
 }
 
 
@@ -136,11 +136,12 @@ body {
     width: 187px;
     height: 316px;
 }
-.card-3 p{
-     text-transform:uppercase;
-     font-size: 24px;
-     line-height: 34px;
-     font-family: Helvetica, sans-serif;
+
+.card-3 p {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 34px;
+    font-family: Helvetica, sans-serif;
 }
 
 .card-4 {
@@ -174,21 +175,31 @@ body {
     .banner p {
         font-size: 14px;
     }
+
     .custom-card {
-        width:40%;
+        width: 40%;
         height: 250px;
     }
 }
+
 @media screen and (max-width: 575px) {
     .custom-card {
         display: block;
         width: 100%;
     }
-    .banner h1{
+
+    .banner h1 {
         width: 340px;
     }
-    .banner p{
+
+    .banner p {
         width: 340px;
+    }
+    .card-3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -222,8 +233,8 @@ body {
 .section-2-c2 {
     height: 100%;
     display: flex;
-    align-items:flex-start;
-    justify-content:flex-start ;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .section-2-c1 img {
@@ -249,7 +260,7 @@ body {
 
     .section-2-c1,
     .section-2-c2 {
-        height:572px;
+        height: 572px;
     }
 
     .section-2-c1 img {
@@ -284,7 +295,7 @@ body {
     .section-2-c1,
     .section-2-c2 {
         width: 100%;
-         height:572px;
+        height: 572px;
     }
 
     .section-2-c2 {
@@ -329,8 +340,9 @@ body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.icon-1{
-    height:114px;
+
+.icon-1 {
+    height: 114px;
     width: 114px;
 }
 
@@ -409,7 +421,7 @@ body {
     content: '✔';
     /* Tick mark */
     position: absolute;
-    left:0px;
+    left: 0px;
     top: 0;
     color: white;
 }
@@ -433,47 +445,51 @@ body {
     }
 
 }
-@media screen and (max-width:576px) {
-    
-}
 
 /* section-5 */
 .sec-5 {
     background-color: #C9AE6A;
-    height: 753px;
     color: #fff;
-    padding: 100px 0px !important;
+    padding: 60px 0px !important;
+    height: auto;
+    /* Set to auto by default for flexibility */
 }
 
 .brand-text {
-    width: 340px;
-    margin: 0px 100px 30px 0px;
-    padding-right: 100px;
-}
-
-.brand-text {
-    font-size: 40px;
+    font-size: 35px;
+    line-height: 49px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    padding-right: 50px;
+    width: 315px;
 }
 
 .nav-pills .nav-link {
     font-size: 24px;
-    padding-top: 20px;
+    padding-top: 10px;
+    line-height: 35px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    font-family: Helvetica, sans-serif;
     color: #ffffff;
     text-decoration: none;
 }
 
 .nav-pills .nav-link:hover {
-    color: #ffffff !important;
+    color: #000 !important;
+    text-decoration: underline;
 }
 
 .nav-pills .nav-link.active {
     background-color: transparent !important;
     color: #000 !important;
-    font-size: 24px;
     text-decoration: underline;
-    line-height: 35px;
 }
 
+/* Brand List Styling */
 .brand-list {
     list-style: none;
     padding: 0;
@@ -485,11 +501,50 @@ body {
     margin-bottom: 4px;
 }
 
+/* ✅ RESPONSIVE MEDIA QUERIES */
+@media screen and (max-width:768px) {
+    .brand-text {
+        font-size: 28px;
+        line-height: 38px;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .nav-pills {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 18px;
+        margin: 5px 10px;
+    }
+
+    .tab-content>.tab-pane {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .nav-pills .nav-link {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .brand-text {
+        font-size: 24px;
+    }
+}
+
+
 .section-6 {
     height: 757px;
     color: #fff;
     padding: 100px 0px !important;
 }
+
+/* Already existing styles (unchanged or slightly improved) */
 
 .form-col {
     background-color: #C9AE6A;
@@ -515,10 +570,10 @@ form textarea {
     margin-bottom: 20px;
     border: 1px solid #fff;
     background-color: transparent;
-    color:rgb(253, 250, 240);
-    font-size:16px;
+    color: rgb(253, 250, 240);
+    font-size: 16px;
     line-height: 29px;
-    font-family:Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .custom-select {
@@ -532,11 +587,7 @@ form textarea {
 }
 
 .custom-select option {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    border: 1px solid #fff;
-    background-color: transparent !important;
+    background-color: #fff !important;
     color: #000;
     font-size: 1rem;
 }
@@ -552,10 +603,46 @@ form textarea {
 .form-row {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .form-row input {
-    flex: 1;
+    flex: 1 1 48%;
+    min-width: 48%;
+}
+
+/* Responsive Tweaks */
+
+@media (max-width: 768px) {
+    .contact-form h2 {
+        font-size: 2rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row input {
+        width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 10px;
+        margin: 30px auto;
+    }
+
+    .contact-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .button-form {
+        font-size: 14px;
+        padding: 12px;
+    }
 }
 
 .button-form {
@@ -565,21 +652,43 @@ form textarea {
     background-color: white;
     color: black;
     cursor: pointer;
-    font-size:13px;
+    font-size: 13px;
     line-height: 18px;
-  
+    transition: all 0.3s ease-in-out;
 }
 
 .button-form:hover {
-    background-color:transparent;
+    background-color: transparent;
     border: 1.5px solid white;
+    color: white;
 }
+
 
 
 .sec5-c2 {
     background-image: url(images/53DU0283.png);
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 747px;
 }
+
+/* Tablet screens (≤ 768px) */
+@media (max-width: 768px) {
+    .sec5-c2 {
+        height: 757px;
+        /* Adjusted height for tablets */
+    }
+}
+
+/* Mobile screens (≤ 576px) */
+@media (max-width: 576px) {
+    .sec5-c2 {
+        height: 300px;
+        /* Adjusted height for mobile */
+    }
+}
+
 
 .Service h3 {
     font-size: 16px;
@@ -594,12 +703,13 @@ form textarea {
     line-height: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.icon-list img{
+
+.icon-list img {
     width: 32px;
     height: 32px;
 }
 
-.icon-text{
+.icon-text {
     font-size: 14px;
     line-height: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -678,6 +788,68 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+/* Default already applied - Desktop styles (≥ 992px) */
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+
+    .news-input {
+        width: 250px
+    }
+
+    .newsbtn {
+        padding: 15px 15px;
+    }
+
+    .newsletter-container p {
+        text-align: center;
+    }
+
+    .col-md-7 {
+        align-items: center !important;
+        margin-top: 30px;
+    }
+
+    .col-md-5 {
+        text-align: center;
+    }
+}
+
+/* Mobile (≤ 576px) */
+@media (max-width: 576px) {
+    .subscription-form {
+        width: 100%;
+    }
+
+    .news-input {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    .newsbtn {
+        width: 40%;
+        font-size: 14px;
+        padding: 15px 20px;
+    }
+
+    .newsletter-container p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .col-md-5 img {
+        width: 30px;
+    }
+
+    .col-md-5 h3 {
+        font-size: 20px;
+    }
+
+    .icon-text {
+        font-size: 14px;
+    }
 }
 
 /* Brands page css */
